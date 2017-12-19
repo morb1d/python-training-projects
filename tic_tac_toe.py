@@ -1,14 +1,6 @@
 """
 Tic Tac Toe Game 
 Written as part of Udemy course: Complete Python Bootcamp
-
-TO DO List:
-* Exceptions
-* Check for corner inputs
-* Re-factor print_board function
-* Re-factor check_game_state function
-* Validate naming convention - if it is according to PEP
-* Add testing with pytest
 """
 def tic_tac_toe():
     board = [" "] * 9
@@ -56,28 +48,14 @@ def tic_tac_toe():
 
     def check_game_state(game_board,player):
         game_tied = next((x for x in game_board if x==" "), True)
-        if (game_board[0] == game_board[1] == game_board[2] != " "):
-            print(player," has won.")
-            return False
-        elif (game_board[3] == game_board[4] == game_board[5] != " "):
-            print(player," has won.")
-            return False
-        elif (game_board[6] == game_board[7] == game_board[8] != " "):
-            print(player," has won.")
-            return False
-        elif (game_board[0] == game_board[3] == game_board[6] != " "):
-            print(player," has won.")
-            return False
-        elif (game_board[1] == game_board[4] == game_board[7] != " "):
-            print(player," has won.")
-            return False
-        elif (game_board[2] == game_board[5] == game_board[8] != " "):
-            print(player," has won.")
-            return False
-        elif (game_board[0] == game_board[4] == game_board[8] != " "):
-            print(player," has won.")
-            return False
-        elif (game_board[2] == game_board[4] == game_board[6] != " "):
+        if ((game_board[0] == game_board[1] == game_board[2] != " ") or
+            (game_board[3] == game_board[4] == game_board[5] != " ") or
+            (game_board[6] == game_board[7] == game_board[8] != " ") or
+            (game_board[0] == game_board[3] == game_board[6] != " ") or
+            (game_board[1] == game_board[4] == game_board[7] != " ") or 
+            (game_board[2] == game_board[5] == game_board[8] != " ") or 
+            (game_board[0] == game_board[4] == game_board[8] != " ") or 
+            (game_board[2] == game_board[4] == game_board[6] != " ")):
             print(player," has won.")
             return False
         elif (game_tied == True):
