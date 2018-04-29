@@ -11,3 +11,5 @@
 * Consider using while loop for checking provided values
 * Consider using split and list of possible values for player input of field on the board ('1 2 3 4 5 6 7 8 9'.split())
 * Consider lower and startswith for checking for replay of game
+* Consider add random selection which player will start the game
+

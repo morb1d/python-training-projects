@@ -58,7 +58,7 @@ def tic_tac_toe():
             (game_board[2] == game_board[4] == game_board[6] != " ")):
             print(player," has won.")
             return False
-        elif (game_tied == True):
+        elif (game_tied):
             print("Game tied.")
             return False
         else:
