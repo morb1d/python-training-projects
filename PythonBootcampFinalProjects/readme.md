@@ -3,7 +3,7 @@ Selected projects will be made as part of The Complete Python Bootcamp course ho
 ## Coin Flip Simulation
 ### Numbers
 
-Write some code that simulates flipping a single coin however many times the user decides. The code should record the outcomes and count the number of tails and heads
+Write some code that simulates flipping a single coin however many times the user decides. The code should record the outcomes and count the number of tails and heads.
 
 ## Closest pair problem
 ### Classic Algorithms
