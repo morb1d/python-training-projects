@@ -5,7 +5,7 @@
 
 import socket
 
-ip_address = '127.0.0.1' # initialize as localhost
+ip_address = '127.0.0.1'  # initialize as localhost
 port_start = 0
 port_end = 65535
 
